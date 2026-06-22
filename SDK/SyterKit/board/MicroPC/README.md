@@ -1,5 +1,7 @@
 # Avaota-A1
 
+Language: English | [中文](README_CN.md)
+
 Avaota-A1 - A Powerful SBC with Allwinner T527 Octa-Core A55 SoC
 
 ![IMG_1742 - 副本](https://github.com/YuzukiHD/Avaota-A1/assets/12003087/1e4e7bca-a16f-469d-96ad-aa21b29acfbf)

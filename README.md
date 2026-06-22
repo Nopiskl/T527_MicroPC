@@ -1,24 +1,26 @@
 # T527 MicroPC
 
-T527 MicroPC 是一款基于全志 T527 平台设计的 MicroPC / IIoT 开发板项目，采用 8 层高速 PCB 设计，面向嵌入式 Linux、工业网关、机器人控制、边缘 AI 控制上位机等应用场景。
+Language: English | [中文](README_CN.md)
 
-项目提供硬件设计资料、系统适配说明与 SDK / Bootloader 适配入口，可作为 T527 平台的二次开发、系统移植和产品原型验证参考。
+T527 MicroPC is a MicroPC / IIoT development board project based on the Allwinner T527 platform. It uses an 8-layer high-speed PCB design and targets embedded Linux, industrial gateways, robot control, edge AI control hosts, and related application scenarios.
+
+This project provides hardware design files, system adaptation notes, and SDK / bootloader adaptation entry points. It can be used as a reference for secondary development, system porting, and product prototype validation on the T527 platform.
 
 <p align="center">
   <img src="Hardware/3D.png" alt="T527 MicroPC 3D View" width="48%">
   <img src="Hardware/PCB.png" alt="T527 MicroPC PCB Layout" width="48%">
 </p>
 
-## 项目特点
+## Features
 
-- 基于全志 T527 SoC，适用于高性能嵌入式 Linux 与 IIoT 场景。
-- 8 层高速 PCB 设计，兼顾信号完整性、接口扩展与工程可制造性。
-- 支持 Avaota A1 镜像生态，可适配 Mainline Linux、Ubuntu CLI、Armbian、OpenWrt 等系统。
-- 可用于 OpenWrt 工业网关、ROS 机器人系统、边缘 AI 控制上位机、工业采集与控制终端等方向。
-- 提供硬件生产资料、原理图、3D 结构文件与系统适配目录，方便快速评估和二次开发。
-- 已完成与 Linux_BSP 项目联动，便于统一维护 T527 BSP 与板级适配内容。
+- Based on the Allwinner T527 SoC for high-performance embedded Linux and IIoT scenarios.
+- 8-layer high-speed PCB design with attention to signal integrity, interface expansion, and manufacturability.
+- Supports the Avaota A1 image ecosystem and can be adapted to Mainline Linux, Ubuntu CLI, Armbian, OpenWrt, and other systems.
+- Suitable for OpenWrt industrial gateways, ROS robot systems, edge AI control hosts, industrial acquisition, and control terminals.
+- Provides hardware production files, schematic, 3D structure files, and system adaptation directories for quick evaluation and secondary development.
+- Linked with the Linux_BSP project for unified maintenance of the T527 BSP and board-level adaptation content.
 
-## 目录结构
+## Directory Structure
 
 ```text
 T527_MicroPC/
@@ -36,42 +38,42 @@ T527_MicroPC/
 └── README.md
 ```
 
-## 硬件资料
+## Hardware Resources
 
-`Hardware` 目录包含 T527 MicroPC 的硬件设计与生产相关文件：
+The `Hardware` directory contains hardware design and production files for T527 MicroPC:
 
-- `SCH_T527 MicroPC_2026-06-18.pdf`：原理图文件。
-- `Gerber_PCB1_3_2026-06-18.zip`：PCB 生产 Gerber 文件。
-- `3D_PCB1_3_2026-06-18.step`：结构 3D STEP 文件。
-- `ProPrj_T527 MicroPC_2026-06-18.epro2`：EDA 工程源文件。
-- `3D.png` / `PCB.png`：板卡 3D 预览图与 PCB 预览图。
+- `SCH_T527 MicroPC_2026-06-18.pdf`: schematic file.
+- `Gerber_PCB1_3_2026-06-18.zip`: PCB production Gerber file.
+- `3D_PCB1_3_2026-06-18.step`: mechanical 3D STEP file.
+- `ProPrj_T527 MicroPC_2026-06-18.epro2`: EDA project source file.
+- `3D.png` / `PCB.png`: board 3D preview and PCB preview images.
 
-## 软件与系统适配
+## Software and System Adaptation
 
-`SDK` 目录用于放置与 T527 MicroPC 相关的软件适配内容：
+The `SDK` directory is used for software adaptation content related to T527 MicroPC:
 
-- `SDK/AvaotaOS`：AvaotaOS 系统适配入口。
-- `SDK/TinaAIOT_SDK`：Tina AIoT SDK 适配入口。
-- `SDK/SyterKit`：Bootloader / SyterKit 适配入口。
+- `SDK/AvaotaOS`: AvaotaOS system adaptation entry point.
+- `SDK/TinaAIOT_SDK`: Tina AIoT SDK adaptation entry point.
+- `SDK/SyterKit`: bootloader / SyterKit adaptation entry point.
 
-当前项目目标是围绕 T527 MicroPC 提供从硬件到系统启动链路的完整参考，包括板级配置、镜像适配、引导程序适配和 BSP 联动维护。
+The current goal of this project is to provide a complete reference from hardware to the system boot chain for T527 MicroPC, including board-level configuration, image adaptation, bootloader adaptation, and BSP-linked maintenance.
 
-## 相关项目
+## Related Projects
 
-- [BSP_T527 / Linux_BSP](https://github.com/Nopiskl/Linux_BSP)：T527 相关 BSP、内核、设备树与板级系统适配项目。
-- [AvaotaOS-main / AvaotaOS](https://github.com/AvaotaSBC/AvaotaOS)：AvaotaOS 主线系统项目，可用于 T527 MicroPC 的系统镜像与软件生态适配。
+- [BSP_T527 / Linux_BSP](https://github.com/Nopiskl/Linux_BSP): T527-related BSP, kernel, device tree, and board-level system adaptation project.
+- [AvaotaOS-main / AvaotaOS](https://github.com/AvaotaSBC/AvaotaOS): AvaotaOS mainline system project, usable for T527 MicroPC system image and software ecosystem adaptation.
 
-## 典型应用
+## Typical Applications
 
-- OpenWrt 多网口网关或工业网络终端。
-- Ubuntu CLI / Armbian 嵌入式开发环境。
-- ROS 机器人控制与传感器数据处理平台。
-- 边缘 AI 推理控制、视觉采集和设备管理上位机。
-- IIoT 数据采集、协议转换和现场控制节点。
+- OpenWrt multi-port gateway or industrial network terminal.
+- Ubuntu CLI / Armbian embedded development environment.
+- ROS robot control and sensor data processing platform.
+- Edge AI inference control, vision acquisition, and device management host.
+- IIoT data acquisition, protocol conversion, and field control node.
 
-## 当前状态
+## Current Status
 
-- 硬件设计资料已整理。
-- 原理图、Gerber、STEP 与 PCB 预览资料已提供。
-- AvaotaOS、TinaAIOT SDK 与 SyterKit 适配目录已规划。
-- 已与 BSP_T527 / Linux_BSP 项目建立联动，后续适配内容将围绕 BSP 与系统镜像持续更新。
+- Hardware design files have been organized.
+- Schematic, Gerber, STEP, and PCB preview resources are provided.
+- AvaotaOS, TinaAIOT SDK, and SyterKit adaptation directories have been planned.
+- The project has been linked with BSP_T527 / Linux_BSP, and future adaptation content will continue to be updated around BSP and system images.

@@ -1,0 +1,6 @@
+语言：[English](README.shaders) | 中文
+
+此目录包含 glmark2 benchmark 使用的 shader 源文件。
+
+请注意，其中许多 shader 要么不完整，要么是模板，不能直接使用！
+缺失的部分（例如常量、精度声明和实际代码）会在运行时动态添加。

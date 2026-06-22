@@ -1,3 +1,5 @@
+Language: English | [中文](README_CN.shaders)
+
 This directory contains the shader sources used by glmark2 benchmarks.
 
 Note that many of the shaders are either incomplete or are templates and can't

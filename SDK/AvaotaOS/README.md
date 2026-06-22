@@ -1,5 +1,7 @@
 # AvaotaOS Build Framework
 
+Language: English | [中文](README_CN.md)
+
 <a href="#avaota-build"><img src="./doc/pics/main.png" alt="main.png" width="100%"></a>
 
 ## Info
@@ -124,4 +126,3 @@ sudo bash build_all.sh \
     -o no \
     -e no
 ```
-
